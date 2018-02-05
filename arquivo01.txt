@@ -1,2 +1,2 @@
-linha AAA
-lck-git
+linha AAA.DDD
+linha BBB
