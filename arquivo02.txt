@@ -1,1 +1,3 @@
 arquivo 02 gabriel
+
+Alteracao depois da versao 18.2.0
