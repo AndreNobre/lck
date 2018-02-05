@@ -1,0 +1,67 @@
+Git
+google git download (https://git-scm.com/downloads)
+
+// iniciando pasta do servidor
+cria a pasta em algum lugar. Ex: C:\server.git
+Botão direito sobre a pasta "Git Bash Here"
+git init --bare
+
+ls  //é o dir do Linux
+git config --list   //mostra as configurações
+clear  // limpa a tela
+//iniciar pasta de trabalho como projeto git
+git flow init
+
+// adicionar usuario
+git config user.name "Andre Nobre"
+git config user.email "andrenobre@lckconsultoria.com.br"
+
+git remote add origin //LCKANDRE/server.git
+git pull origin
+
+//iniciando um ticket (melhoria)
+git flow feature start T1
+
+//iniciando um ticket (erro)
+git flow bugfix start T10
+
+// adicionar um arquivo ao git
+git add .
+
+// lista os arquivos fora do git
+git status
+
+// retira o arquivo do git
+git reset .
+git reset arquivo01.txt
+git rm arquivo3B.txt -f
+
+// Finaliza a alteração no arquivo
+git commit -m "T1 - Criação dos arquivo3"
+
+// desfaz o commit
+git reset HEAD~1
+
+git log
+
+// finaliza alteração na Feature (no caso um ticket)
+git flow feature finish T1
+
+// alterar o branch
+git chesckout master
+git chesckout develop
+
+// enviar as alterações para o servidor
+git push origin develop
+// sempre fazer um "git pull origin develop" antes pois caso ocorra algum conflito
+
+// pegar as alterações do servidor
+git pull origin develop 
+git pull origin develop --allow-unrelated-histories
+
+
+
+//colocar as extensões e pastas que não vai entrar no controle de versão
+Criar um arquivo na pasta de trabalho chamado .gitignore
+Abrir ele no notepad e colocar as extensoes
+
